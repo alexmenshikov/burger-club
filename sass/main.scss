@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Lifehack Basic';
+  src: url("../fonts/LifehackBasic.otf");
+}
+
+@font-face {
   font-family: 'RobotoRegular';
   src: url("../fonts/RobotoRegular.ttf");
 }
@@ -20,6 +25,7 @@
 
 $color-white-second: rgb(254, 254, 254);
 $color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
 $color-orange: #f6a501; /*rgb(246, 165, 1)*/
 
 #main {
@@ -31,48 +37,110 @@ $color-orange: #f6a501; /*rgb(246, 165, 1)*/
     padding: 25px 0 15px 0;
 
     &__container {
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    #logo {
-      span {
-        font-family: "Capture_it", sans-serif;
-        font-size: 30px;
-        color: $color-white-second;
+      #logo {
+        span {
+          font-family: "Capture_it", sans-serif;
+          font-size: 30px;
+          color: $color-white-second;
+        }
       }
-    }
 
-    #menu {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        width: 580px;
+      #menu {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          width: 580px;
 
-        li {
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 16px;
-          color: $color-white;
-          font-weight: bold;
-
-          a {
-            text-decoration: none;
+          li {
+            font-family: "RobotoRegular", sans-serif;
+            font-size: 16px;
             color: $color-white;
-          }
+            font-weight: bold;
 
-          &:first-child {
-            list-style: none;
-          }
+            a {
+              text-decoration: none;
+              color: $color-white;
+            }
 
-          &.active a {
-            font-family: "RobotoBold", sans-serif;
+            &:first-child {
+              list-style: none;
+            }
+
+            &.active a {
+              font-family: "RobotoBold", sans-serif;
+            }
           }
         }
       }
     }
   }
+
+  #titles {
+    padding-top: 60px;
+
+    #titles__container {
+      width: 1170px;
+      margin: 0 auto;
+
+      #title-burger {
+        width: 600px;
+        height: 130px;
+        background-image: url("../images/stamp.png");
+        background-size: 100% 100%;
+        font-family: "Capture_it", sans-serif;
+        font-size: 55px;
+        text-shadow: 0 0 91.16px rgba(2, 7, 8, 0.004);
+        color: $color-orange;
+        text-align: center;
+        line-height: 130px;
+      }
+
+      #show-menu {
+        .btn-yellow {
+          font-family: "RobotoRegular", sans-serif;
+          font-size: 15px;
+          color: $color-black;
+          text-transform: uppercase;
+          text-align: center;
+          border-radius: 10px;
+          background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+          background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+          background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+          width: 209px;
+          height: 50px;
+          margin-top: 60px;
+          transition: all 0.3s;
+          outline: none;
+          border-style: none;
+
+          &:hover {
+            box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
+            cursor: pointer;
+          }
+        }
+      }
+
+      #title-text {
+        font-family: "Lifehack Basic", sans-serif;
+        font-size: 40px;
+        color: $color-white;
+        text-shadow: 0 0 14.25px rgba(2, 7, 8, 0.5);
+        -moz-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+        -webkit-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+        -ms-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+        margin-top: 35px;
+
+        span {
+          color: $color-orange;
+        }
+      }
+    }
   }
 }
 
