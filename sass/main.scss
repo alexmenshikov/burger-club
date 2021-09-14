@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background: url("../images/main-bg.png");
+  height: 908px;
+  background-position: center;
+  #header {
+    display: flex;
+  }
+}
