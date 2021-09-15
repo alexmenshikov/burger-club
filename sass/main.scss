@@ -19,14 +19,25 @@
 }
 
 @font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight.ttf");
+}
+
+@font-face {
   font-family: 'RobotoBold';
   src: url("../fonts/RobotoBold.ttf");
 }
 
+$color-bg: rgb(248, 247, 246);
 $color-white-second: rgb(254, 254, 254);
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 $color-orange: #f6a501; /*rgb(246, 165, 1)*/
+$color-brown: rgb(51, 23, 3);
+
+body {
+  background-color: $color-bg;
+}
 
 #main {
   background-image: url("../images/main-bg.png");
@@ -144,6 +155,98 @@ $color-orange: #f6a501; /*rgb(246, 165, 1)*/
   }
 }
 
+#features {
+  padding-bottom: 10px;
+
+  &__container {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .feature {
+    width: 390px;
+    text-align: center;
+    margin: 25px 0;
+
+    &__image {
+      margin: 0 auto 20px auto;
+      width: 96px;
+      height: 79px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      font-family: "RobotoBold", sans-serif;
+      font-size: 20px;
+      color: $color-brown;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-family: "RobotoLight", sans-serif;
+      font-size: 18px;
+      color: $color-brown;
+      line-height: 1.222;
+      text-align: center;
+    }
+  }
+}
+
+#description {
+  background-image: url('../images/description-bg.png');
+  background-position: center;
+  height: 1013px;
+
+  .block-title {
+    padding-top: 200px;
+  }
+
+  &__container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+
+    .description__text {
+      max-width: 420px;
+      &__title {
+        font-family: "Lifehack Basic", sans-serif;
+        font-size: 30px;
+        color: $color-white-second;
+        line-height: 1.167;
+        margin: 115px 0 45px 0;
+      }
+
+      &__words {
+        font-family: "RobotoLight", sans-serif;
+        font-size: 16px;
+        color: $color-white-second;
+        line-height: 1.563;
+        text-indent: 20px;
+        margin: 15px 0;
+      }
+    }
+
+    .description__image {
+      max-width: 720px;
+    }
+  }
+}
+
+// ==== Заголовки ====
+.block-title {
+  font-size: 35px;
+  font-family: "RobotoBold", sans-serif;
+  color: $color-orange;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// ==== Белая кнопка ====
 .btn-white {
   border: 1px solid $color-white;
   border-radius: 10px;

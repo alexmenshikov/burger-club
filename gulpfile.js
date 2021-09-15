@@ -2,6 +2,7 @@
 
 const {src, dest, watch, series} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+// const sass = require('gulp-sass');
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 const concatCss = require('gulp-concat-css');
