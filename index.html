@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Burger club</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -171,6 +173,544 @@
     </div>
 </div>
 
+<div class="stock">
+    <div class="stock__container">
+        <h2 class="block-title">
+            познакомьтесь с ассортиментом BURGERCLUB
+        </h2>
+        <div class="category__container">
+            <div class="category active" data-id="burgers__container">
+                Бургеры
+            </div>
+            <div class="category" data-id="fries__container">
+                Гарниры
+            </div>
+            <div class="category" data-id="sauces__container">
+                Соусы
+            </div>
+            <div class="category" data-id="drinks__container">
+                Напитки
+            </div>
+        </div>
+
+        <div id="burgers__container" class="products-container">
+            <div class="products">
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger1.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            бургер с двойной котлетой
+                        </div>
+                        <div class="product__content__description">
+                            Свежая булочка, говяжья котлета Black Angus Aberdin, лук
+                            карамелизированный,томаты свежие, бекон ображенный, салат
+                            айсберг, огурец солёный, соль морская, сыр пармезан,
+                            томатный соус собственного приготовления.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>560 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>680 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger2.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Черный ахтунг-бургер
+                        </div>
+                        <div class="product__content__description">
+                            В этом сэндвиче приготовленное на гриле нежное белое куриное филе встречается с беконом,
+                            соусом
+                            «Барбекю», листовым салатом, спелым помидором, густым майонезом и хрустящим поджаренным
+                            луком на
+                            подрумяненной булочке.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>320 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>450 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger3.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Двойной говяжий
+                        </div>
+                        <div class="product__content__description">
+                            Это два аппетитных, приготовленных на огне бифштекса из 100% говядины с сочными помидорами,
+                            свежим нарезанным листовым салатом, густым майонезом, хрустящими маринованными огурчиками и
+                            свежим луком на нежной булочке с кунжутом.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>520 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>320 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger4.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Бургер Цезарь
+                        </div>
+                        <div class="product__content__description">
+                            Любители курочки оценят новинку Бургер Цезарь! Сочная хрустящая куриная котлета, свежий
+                            томат и
+                            листовой салат заправляются соусом Цезарь и подаются на подрумяненной булочке с кунжутом.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>480 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>460 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger5.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Ирландский Бургер
+                        </div>
+                        <div class="product__content__description">
+                            Ирландский Бургер с фирменным соусом достоин звания высокой кухни. Сочный говяжий бифштекс,
+                            расплавленный сыр Чеддер, маринованные огурчики, хрустящий лук и листья салата заправляются
+                            сырным соусом и пряным соусом из натуральных ингридиентов. Подается на нежной картофельной
+                            булочке.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>510 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>780 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger6.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Злой Бургер
+                        </div>
+                        <div class="product__content__description">
+                            Встречай самый злой бургер в коллекции Бургеров. Бекон, двойная порция говядины на гриле,
+                            много
+                            сыра - все, как ты любишь, и ничего лишнего!
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>270 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>330 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/burger7.png" alt="burger">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Макси Бургер
+                        </div>
+                        <div class="product__content__description">
+                            Это целых три вкуснейших, приготовленных на огне бифштекса из 100% говядины с сочными
+                            помидорами, свежим нарезанным листовым салатом, густым майонезом, хрустящими маринованными
+                            огурчиками и свежим луком на нежной булочке с кунжутом.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>770 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>1190 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="products-nav">
+                <div class="product-nav active">
+                    <img src="images/burger1.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger2.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger3.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger4.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger5.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger6.png" alt="burger">
+                </div>
+                <div class="product-nav">
+                    <img src="images/burger7.png" alt="burger">
+                </div>
+            </div>
+        </div>
+
+        <div id="fries__container" class="products-container">
+            <div class="products">
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/fries1.png" alt="fries">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Картошка ФРИ маленькая
+                        </div>
+                        <div class="product__content__description">
+                            Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
+                            обед.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>350 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>500 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/fries2.png" alt="fries">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Картошка ФРИ стандартная
+                        </div>
+                        <div class="product__content__description">
+                            Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
+                            обед.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>350 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>500 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/fries3.png" alt="fries">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Картошка ФРИ большая
+                        </div>
+                        <div class="product__content__description">
+                            Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
+                            обед.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>500 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>650 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-nav">
+                <div class="product-nav active">
+                    <img src="images/fries1.png" alt="fries">
+                </div>
+                <div class="product-nav">
+                    <img src="images/fries2.png" alt="fries">
+                </div>
+                <div class="product-nav">
+                    <img src="images/fries3.png" alt="fries">
+                </div>
+            </div>
+        </div>
+
+        <div id="sauces__container" class="products-container">
+            <div class="products">
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/sauce1.png" alt="sauce">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Кисло-сладкий Соус
+                        </div>
+                        <div class="product__content__description">
+                            Прекрасный кисло-сладкий соус станет отменным дополнением к сочной картошечке ФРИ.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>100 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>100 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/sauce2.png" alt="sauce">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Ореховый Соус
+                        </div>
+                        <div class="product__content__description">
+                            Прекрасный ореховый соус станет отменным дополнением к сочной картошечке ФРИ.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>100 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>100 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/sauce3.png" alt="sauce">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Кетчуп
+                        </div>
+                        <div class="product__content__description">
+                            Прекрасный кетчуп станет отменным дополнением к сочной картошечке ФРИ.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>100 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>100 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/sauce4.png" alt="sauce">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Соус барбекю
+                        </div>
+                        <div class="product__content__description">
+                            Прекрасный соус барбекю станет отменным дополнением к сочной картошечке ФРИ.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>100 гр.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>100 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-nav">
+                <div class="product-nav active">
+                    <img src="images/sauce1.png" alt="sauce">
+                </div>
+                <div class="product-nav">
+                    <img src="images/sauce2.png" alt="sauce">
+                </div>
+                <div class="product-nav">
+                    <img src="images/sauce3.png" alt="sauce">
+                </div>
+                <div class="product-nav">
+                    <img src="images/sauce4.png" alt="sauce">
+                </div>
+            </div>
+        </div>
+
+        <div id="drinks__container" class="products-container">
+            <div class="products">
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/drink1.png" alt="drink">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Pepsi
+                        </div>
+                        <div class="product__content__description">
+                            Настоящий вкус Pepsi® – идеальный спутник к любому блюду.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>500 мл.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>120 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/drink2.png" alt="drink">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            Mirinda
+                        </div>
+                        <div class="product__content__description">
+                            Mirinda® – это всегда оранжевое настроение!
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>500 мл.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>120 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product__image">
+                        <img src="images/drink3.png" alt="drink">
+                    </div>
+                    <div class="product__content">
+                        <div class="product__content__title">
+                            7UP
+                        </div>
+                        <div class="product__content__description">
+                            Шипучая кислинка 7UP® освежает в любое время дня.
+                        </div>
+                        <div class="product__content__properties">
+                            <div class="product__content__property">
+                                <img src="images/scale.png" alt="scale">
+                                <span>500 мл.</span>
+                            </div>
+                            <div class="product__content__property">
+                                <img src="images/coin.png" alt="coin">
+                                <span>120 руб.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="products-nav">
+                <div class="product-nav active">
+                    <img src="images/drink1.png" alt="drink">
+                </div>
+                <div class="product-nav">
+                    <img src="images/drink2.png" alt="drink">
+                </div>
+                <div class="product-nav">
+                    <img src="images/drink3.png" alt="drink">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
