@@ -83,4 +83,12 @@ $(document).ready(() => {
         infinite: false,
         focusOnSelect: true
     });
+
+    // === reviews ===
+    $('.reviews').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true
+    });
 });

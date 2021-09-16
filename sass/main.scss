@@ -4,28 +4,38 @@
 }
 
 @font-face {
-  font-family: 'Capture_it';
+  font-family: "Capture_it";
   src: url("../fonts/Captureit.ttf");
 }
 
 @font-face {
-  font-family: 'Lifehack Basic';
+  font-family: "Lifehack Basic";
   src: url("../fonts/LifehackBasic.otf");
 }
 
 @font-face {
-  font-family: 'RobotoRegular';
+  font-family: "RobotoRegular";
   src: url("../fonts/RobotoRegular.ttf");
 }
 
 @font-face {
-  font-family: 'RobotoLight';
+  font-family: "RobotoLight";
   src: url("../fonts/RobotoLight.ttf");
 }
 
 @font-face {
-  font-family: 'RobotoBold';
+  font-family: "RobotoBold";
   src: url("../fonts/RobotoBold.ttf");
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("../fonts/RobotoBlack.ttf");
+}
+
+@font-face {
+  font-family: "RobotoThin";
+  src: url("../fonts/RobotoThin.ttf");
 }
 
 $color-bg: rgb(248, 247, 246);
@@ -34,6 +44,8 @@ $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 $color-orange: #f6a501; /*rgb(246, 165, 1)*/
 $color-brown: rgb(51, 23, 3);
+$color-footer: rgb(18, 8, 1);
+$color-footer-text: rgb(188, 188, 188);
 
 body {
   background-color: $color-bg;
@@ -198,7 +210,7 @@ body {
 }
 
 #description {
-  background-image: url('../images/description-bg.png');
+  background-image: url("../images/description-bg.png");
   background-position: center;
   height: 1090px;
 
@@ -385,23 +397,165 @@ body {
       display: none;
     }
   }
+
+  .slick-prev:before {
+    content: url("../images/prev.png");
+  }
+
+  .slick-next {
+    left: 600px;
+  }
+
+  .slick-next:before {
+    content: url("../images/next.png");
+  }
+}
+
+// ==== info ====
+.info {
+  background-image: url("../images/info-bg.png");
+  background-position: top center;
+  padding: 1px 0;
+
+  .block-title {
+    margin: 130px 0 60px 0;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+
+    .review {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0 50px;
+      outline: none;
+
+      .review__image {
+        border-radius: 50%;
+        width: 112px;
+        height: 112px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .review__text {
+        width: 325px;
+
+        .review__text__title {
+          font-family: "RobotoBold", sans-serif;
+          font-size: 20px;
+          color: $color-white-second;
+          text-transform: uppercase;
+          margin-bottom: 35px;
+        }
+
+        .review__text__description {
+          font-family: "RobotoLight", sans-serif;
+          font-size: 16px;
+          color: $color-white-second;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .slick-prev:before {
+      content: url("../images/prev-white.png");
+    }
+
+    .slick-next:before {
+      content: url("../images/next-white.png");
+    }
+  }
+
+  .addresses {
+    width: 1170px;
+    margin: 0 auto;
+
+    .block-title {
+      margin: 150px 0 60px 0;
+    }
+
+    .addresses__container {
+      display: flex;
+      justify-content: center;
+
+      .address__container {
+        border: 1px solid $color-white;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 0 15px;
+
+        .address {
+          border: 1px solid $color-white;
+          border-radius: 10px;
+          width: 470px;
+
+          .address__text {
+            margin-top: 25px;
+            text-align: left;
+            padding: 0 90px;
+
+            span {
+              font-family: "RobotoBold", sans-serif;
+              font-size: 20px;
+              color: $color-bg;
+              margin-left: 15px;
+              vertical-align: middle;
+            }
+
+            img {
+              vertical-align: middle;
+            }
+          }
+
+          .address__button {
+            margin: 40px auto 25px auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .instagram {
+    width: 1170px;
+    margin: 85px auto;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .instagram__text {
+      font-family: "RobotoBlack", sans-serif;
+      font-size: 20px;
+      color: $color-orange;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+  }
+}
+
+.footer {
+  background-color: $color-footer;
+  width: 100%;
+  font-family: "RobotoThin", sans-serif;
+  font-size: 10px;
+  color: $color-footer-text;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px 0;
 }
 
 // ==== slick ====
 .slick-slide img {
   display: inline;
-}
-
-.slick-prev:before {
-  content: url("../images/prev.png");
-}
-
-.slick-next {
-  left: 600px;
-}
-
-.slick-next:before {
-  content: url("../images/next.png");
 }
 
 // ==== Заголовки ====
@@ -435,5 +589,3 @@ body {
     color: $color-orange;
   }
 }
-
-
