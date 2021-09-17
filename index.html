@@ -36,7 +36,7 @@
                     </ul>
                 </div>
                 <div id="action">
-                    <button class="btn-white">
+                    <button class="btn-white open-modal">
                         забронировать столик
                     </button>
                 </div>
@@ -817,7 +817,7 @@
                             <span>Ежедневно 9:00 — 23:00</span>
                         </div>
                         <div class="address__button">
-                            <button class="btn-white">забронировать столик</button>
+                            <button class="btn-white open-modal">забронировать столик</button>
                         </div>
                     </div>
                 </div>
@@ -837,7 +837,7 @@
                             <span>Ежедневно 9:00 — 23:00</span>
                         </div>
                         <div class="address__button">
-                            <button class="btn-white">забронировать столик</button>
+                            <button class="btn-white open-modal">забронировать столик</button>
                         </div>
                     </div>
                 </div>
@@ -858,6 +858,60 @@
 
     <div class="footer">
         burgerclub 2019&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;все права защищены
+    </div>
+
+    <div class="reservation__container">
+        <div class="reservation">
+            <div class="reservation__cancel">
+                <img class="reservation__cancel__close" src="images/cancel.png" alt="cancel">
+            </div>
+            <div class="reservation__content">
+                <h2 class="block-title">
+                    забронировать столик
+                </h2>
+                <form action="" class="reserve">
+                    <div class="reserve__input">
+                        <label for="name">Ваше имя</label>
+                        <div>
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="reserve__input">
+                        <label for="count">Количество человек</label>
+                        <div>
+                            <input type="text" name="count" id="count">
+                        </div>
+                    </div>
+                    <div class="reserve__input">
+                        <label for="phone">Ваш телефон</label>
+                        <div>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="reserve__input">
+                        <label for="time">Желаемое время</label>
+                        <div>
+                            <input type="text" name="time" id="time">
+                        </div>
+                    </div>
+                    <p class="reserve__error">
+                        Заполните правильно все поля
+                    </p>
+                </form>
+                <div class="reserve__button">
+                    <button class="btn-yellow">забронировать</button>
+                </div>
+            </div>
+            <div class="reservation__sent">
+                <h2 class="block-title">
+                    спасибо за то, что выбрали нас!
+                </h2>
+                <div class="reservation__sent__text">
+                    Администратор BURGERCLUB свяжется с вами в течение 15 минут,
+                    чтобы подтвердить бронирование
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>

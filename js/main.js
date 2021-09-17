@@ -91,4 +91,47 @@ $(document).ready(() => {
         slidesToScroll: 2,
         arrows: true
     });
+
+    // === open-modal ===
+    $('.open-modal').click(() => {
+        $('.reservation__container').css('display', 'flex');
+    });
+
+    $('.reservation__cancel__close, .reservation__container').click((e) => {
+        if ((e.target.className === 'reservation__container') || (e.target.className === 'reservation__cancel__close')) {
+            $('.reservation__container').hide();
+        }
+    });
+
+    // === send form ===
+    $('.reserve__button > button').click(() => {
+        let name = $('#name');
+        let count = $('#count');
+        let phone = $('#phone');
+        let time = $('#time');
+
+        name.css('border-color', 'rgb(255, 255, 255)');
+        count.css('border-color', 'rgb(255, 255, 255)');
+        phone.css('border-color', 'rgb(255, 255, 255)');
+        time.css('border-color', 'rgb(255, 255, 255)');
+
+        if (name.val() && count.val() && phone.val() && time.val()) {
+            $('.reservation__sent').show();
+            $('.reservation__content').hide();
+        } else {
+            $('.reserve__error').show();
+            if (!name.val()) {
+                name.css('border-color', 'rgb(241, 57, 57)');
+            }
+            if (!count.val()) {
+                count.css('border-color', 'rgb(241, 57, 57)');
+            }
+            if (!phone.val()) {
+                phone.css('border-color', 'rgb(241, 57, 57)');
+            }
+            if (!time.val()) {
+                time.css('border-color', 'rgb(241, 57, 57)');
+            }
+        }
+    });
 });
