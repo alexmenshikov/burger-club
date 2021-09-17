@@ -144,6 +144,9 @@ body {
           transition: all 0.3s;
           outline: none;
           border-style: none;
+          text-decoration: none;
+          display: block;
+          line-height: 50px;
 
           &:hover {
             box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);

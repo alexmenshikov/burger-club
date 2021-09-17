@@ -116,8 +116,21 @@ $(document).ready(() => {
         time.css('border-color', 'rgb(255, 255, 255)');
 
         if (name.val() && count.val() && phone.val() && time.val()) {
-            $('.reservation__sent').show();
-            $('.reservation__content').hide();
+            // $('.reservation__sent').show();
+            // $('.reservation__content').hide();
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'name=' + name.val() + '&count=' + count.val() + '&phone=' + phone.val() + '&time=' + time.val(),
+                success: () => {
+                    $('.reservation__sent').show();
+                    $('.reservation__content').hide();
+                },
+                error: () => {
+                    $('.reservation__container').hide();
+                    alert('Ошибка бронирования. Свяжитесь пожалуйста, по номеру телефона.');
+                }
+            })
         } else {
             $('.reserve__error').show();
             if (!name.val()) {

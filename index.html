@@ -19,19 +19,19 @@
                 <div id="menu">
                     <ul>
                         <li class="active">
-                            <a href="#">Главная</a>
+                            <a href="#main">Главная</a>
                         </li>
                         <li>
-                            <a href="#">О нас</a>
+                            <a href="#description">О нас</a>
                         </li>
                         <li>
-                            <a href="#">Преимущества</a>
+                            <a href="#features">Преимущества</a>
                         </li>
                         <li>
-                            <a href="#">Наши бургеры</a>
+                            <a href="#stock">Наши бургеры</a>
                         </li>
                         <li>
-                            <a href="#">Адреса ресторанов</a>
+                            <a href="#addresses">Адреса ресторанов</a>
                         </li>
                     </ul>
                 </div>
@@ -49,7 +49,7 @@
                     свежие бургеры
                 </div>
                 <div id="show-menu">
-                    <button class="btn-yellow">посмотреть меню</button>
+                    <a class="btn-yellow" href="#stock">посмотреть меню</a>
                 </div>
                 <div id="title-text">
                     <span>Такие сочные,</span> что пальчики оближешь!
@@ -175,7 +175,7 @@
         </div>
     </div>
 
-    <div class="stock">
+    <div id="stock" class="stock">
         <div class="stock__container">
             <h2 class="block-title">
                 познакомьтесь с ассортиментом BURGERCLUB
@@ -797,7 +797,7 @@
             </div>
         </div>
 
-        <div class="addresses">
+        <div id="addresses" class="addresses">
             <h2 class="block-title">
                 адреса наших ресторанов
             </h2>
@@ -869,7 +869,7 @@
                 <h2 class="block-title">
                     забронировать столик
                 </h2>
-                <form action="" class="reserve">
+                <form action="mail.php" class="reserve" method="POST">
                     <div class="reserve__input">
                         <label for="name">Ваше имя</label>
                         <div>
@@ -899,7 +899,7 @@
                     </p>
                 </form>
                 <div class="reserve__button">
-                    <button class="btn-yellow">забронировать</button>
+                    <button class="btn-yellow" type="submit">забронировать</button>
                 </div>
             </div>
             <div class="reservation__sent">
