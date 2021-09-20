@@ -1,922 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    <title>Burger club</title>
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/main.min.css">
-</head>
+		<!-- title -->
+		<title>Burger club</title>
 
-<body>
-    <div id="main">
-        <div id="header">
-            <div id="header__container">
-                <div id="logo">
-                    <span>BurgerCluB</span>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li class="active">
-                            <a href="#main">Главная</a>
-                        </li>
-                        <li>
-                            <a href="#description">О нас</a>
-                        </li>
-                        <li>
-                            <a href="#features">Преимущества</a>
-                        </li>
-                        <li>
-                            <a href="#stock">Наши бургеры</a>
-                        </li>
-                        <li>
-                            <a href="#addresses">Адреса ресторанов</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="action">
-                    <button class="btn-white open-modal">
-                        забронировать столик
-                    </button>
-                </div>
-            </div>
-        </div>
+		<!-- styles -->
+		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/slick-theme.css" />
+		<link rel="stylesheet" href="css/main.min.css" />
 
-        <div id="titles">
-            <div id="titles__container">
-                <div id="title-burger">
-                    свежие бургеры
-                </div>
-                <div id="show-menu">
-                    <a class="btn-yellow" href="#stock">посмотреть меню</a>
-                </div>
-                <div id="title-text">
-                    <span>Такие сочные,</span> что пальчики оближешь!
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- mobile support -->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-    <div id="features">
-        <div id="features__container">
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/meat.png" alt="meat">
-                </div>
-                <div class="feature__title">
-                    Мраморная говядина
-                </div>
-                <div class="feature__text">
-                    Наши бургеры готовятся только<br>
-                    из свежайшей мраморной говядины<br>
-                    породы Black Angus Aberdin.
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/flask.png" alt="flask">
-                </div>
-                <div class="feature__title">
-                    Нет полуфабрикатов
-                </div>
-                <div class="feature__text">
-                    Мы принципиально не используем<br>
-                    никаких полуфабрикатов.<br>
-                    Всё только собственного приготовления. .
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/sauces.png" alt="sauces">
-                </div>
-                <div class="feature__title">
-                    «Домашние» соусы
-                </div>
-                <div class="feature__text">
-                    Несколько текстовых<br>
-                    предложений, как описание<br>
-                    этого преимущества компании
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/bun-2.png" alt="bun">
-                </div>
-                <div class="feature__title">
-                    Свежие булочки
-                </div>
-                <div class="feature__text">
-                    Булочки для бургеров<br>
-                    выпекаются несколько раз в день,<br>
-                    поэтому они всегда свежие.
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/bbq.png" alt="bbq">
-                </div>
-                <div class="feature__title">
-                    Гриль-обжарка
-                </div>
-                <div class="feature__text">
-                    Все ингредиенты: мясо, овощи,<br>
-                    булочка — обжариваютсяна гриле.<br>
-                    Поэтому у них необыкновенный вкус
-                </div>
-            </div>
-            <div class="feature">
-                <div class="feature__image">
-                    <img src="images/burger.png" alt="burger">
-                </div>
-                <div class="feature__title">
-                    Эксклюзивные рецепты
-                </div>
-                <div class="feature__text">
-                    В BURGERCLUB все бургеры<br>
-                    приготовлены по эксклюзивным рецептам.<br>
-                    Таких вы еще не пробовали!
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	</head>
 
-    <div id="description">
-        <h2 id="description__title" class="block-title">
-            BURGERCLUB — это настоящая команда профессионалов
-        </h2>
-        <div id="description__container">
-            <div class="description__text">
-                <div class="description__text__title">
-                    Попробовав наши бургеры однажды,
-                    вы запомните их вкус навсегда!
-                </div>
-                <div class="description__text__words">
-                    Открывая BURGERCLUB , мы отражаем новый<br>
-                    взгляд на бургеры, и хотим сломать устоявшийся<br>
-                    стереотип, что это просто фастфуд.
-                </div>
-                <div class="description__text__words">
-                    Мы просто уверены, что даже быстро<br>
-                    приготовленная еда может быть очень вкусной и<br>
-                    качественной.
-                </div>
-                <div class="description__text__words">
-                    Ждём в гости всех, кто любит домашние бургеры и<br>
-                    знает толк в «Black Angus Aberdin», а также тех, кто<br>
-                    еще не пробовал настоящие сербские плескавицу и<br>
-                    чевапчичи! У нас только свежее мясо и самые лучшие<br>
-                    бургеры в Москве!
-                </div>
-            </div>
-            <div class="description__image">
-                <img src="images/big_burger.png" alt="">
-            </div>
-        </div>
-    </div>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="header__container">
+					<div id="burger">&#9776;</div>
+					<div id="logo">
+						<span>BurgerCluB</span>
+					</div>
+					<div id="menu">
+						<ul>
+							<li class="active">
+								<a href="#main">Главная</a>
+							</li>
+							<li>
+								<a href="#description">О нас</a>
+							</li>
+							<li>
+								<a href="#features">Преимущества</a>
+							</li>
+							<li>
+								<a href="#stock">Наши бургеры</a>
+							</li>
+							<li>
+								<a href="#addresses">Адреса ресторанов</a>
+							</li>
+						</ul>
+					</div>
+					<div id="action">
+						<button class="btn-white open-modal">забронировать столик</button>
+					</div>
+				</div>
+			</div>
 
-    <div id="stock" class="stock">
-        <div class="stock__container">
-            <h2 class="block-title">
-                познакомьтесь с ассортиментом BURGERCLUB
-            </h2>
-            <div class="category__container">
-                <div class="category active" data-id="burgers__container">
-                    Бургеры
-                </div>
-                <div class="category" data-id="fries__container">
-                    Гарниры
-                </div>
-                <div class="category" data-id="sauces__container">
-                    Соусы
-                </div>
-                <div class="category" data-id="drinks__container">
-                    Напитки
-                </div>
-            </div>
+			<div id="titles">
+				<div id="titles__container">
+					<div id="title-burger">свежие бургеры</div>
+					<div id="show-menu">
+						<a class="btn-yellow" href="#stock">посмотреть меню</a>
+					</div>
+					<div id="title-text">
+						<span>Такие сочные,</span> что пальчики оближешь!
+					</div>
+				</div>
+			</div>
+		</div>
 
-            <div id="burgers__container" class="products-container">
-                <div class="products">
+		<div id="features">
+			<div id="features__container">
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/meat.png" alt="meat" />
+					</div>
+					<div class="feature__title">Мраморная говядина</div>
+					<div class="feature__text">
+						Наши бургеры готовятся только<br />
+						из свежайшей мраморной говядины<br />
+						породы Black Angus Aberdin.
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/flask.png" alt="flask" />
+					</div>
+					<div class="feature__title">Нет полуфабрикатов</div>
+					<div class="feature__text">
+						Мы принципиально не используем<br />
+						никаких полуфабрикатов.<br />
+						Всё только собственного приготовления. .
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/sauces.png" alt="sauces" />
+					</div>
+					<div class="feature__title">«Домашние» соусы</div>
+					<div class="feature__text">
+						Несколько текстовых<br />
+						предложений, как описание<br />
+						этого преимущества компании
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/bun-2.png" alt="bun" />
+					</div>
+					<div class="feature__title">Свежие булочки</div>
+					<div class="feature__text">
+						Булочки для бургеров<br />
+						выпекаются несколько раз в день,<br />
+						поэтому они всегда свежие.
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/bbq.png" alt="bbq" />
+					</div>
+					<div class="feature__title">Гриль-обжарка</div>
+					<div class="feature__text">
+						Все ингредиенты: мясо, овощи,<br />
+						булочка — обжариваютсяна гриле.<br />
+						Поэтому у них необыкновенный вкус
+					</div>
+				</div>
+				<div class="feature">
+					<div class="feature__image">
+						<img src="images/burger.png" alt="burger" />
+					</div>
+					<div class="feature__title">Эксклюзивные рецепты</div>
+					<div class="feature__text">
+						В BURGERCLUB все бургеры<br />
+						приготовлены по эксклюзивным рецептам.<br />
+						Таких вы еще не пробовали!
+					</div>
+				</div>
+			</div>
+		</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger1.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                бургер с двойной котлетой
-                            </div>
-                            <div class="product__content__description">
-                                Свежая булочка, говяжья котлета Black Angus Aberdin, лук
-                                карамелизированный,томаты свежие, бекон ображенный, салат
-                                айсберг, огурец солёный, соль морская, сыр пармезан,
-                                томатный соус собственного приготовления.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>560 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>680 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+		<div id="description">
+			<h2 id="description__title" class="block-title">
+				BURGERCLUB — это настоящая команда профессионалов
+			</h2>
+			<div id="description__container">
+				<div class="description__text">
+					<div class="description__text__title">
+						Попробовав наши бургеры однажды, вы запомните их вкус навсегда!
+					</div>
+					<div class="description__text__words">
+						Открывая BURGERCLUB , мы отражаем новый<br />
+						взгляд на бургеры, и хотим сломать устоявшийся<br />
+						стереотип, что это просто фастфуд.
+					</div>
+					<div class="description__text__words">
+						Мы просто уверены, что даже быстро<br />
+						приготовленная еда может быть очень вкусной и<br />
+						качественной.
+					</div>
+					<div class="description__text__words">
+						Ждём в гости всех, кто любит домашние бургеры и<br />
+						знает толк в «Black Angus Aberdin», а также тех, кто<br />
+						еще не пробовал настоящие сербские плескавицу и<br />
+						чевапчичи! У нас только свежее мясо и самые лучшие<br />
+						бургеры в Москве!
+					</div>
+				</div>
+				<div class="description__image">
+					<img src="images/big_burger.png" alt="" />
+				</div>
+			</div>
+		</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger2.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Черный ахтунг-бургер
-                            </div>
-                            <div class="product__content__description">
-                                В этом сэндвиче приготовленное на гриле нежное белое куриное филе встречается с беконом,
-                                соусом
-                                «Барбекю», листовым салатом, спелым помидором, густым майонезом и хрустящим поджаренным
-                                луком на
-                                подрумяненной булочке.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>320 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>450 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+		<div id="stock" class="stock">
+			<div class="stock__container">
+				<h2 class="block-title">познакомьтесь с ассортиментом BURGERCLUB</h2>
+				<div class="category__container">
+					<div class="category active" data-id="burgers__container">
+						Бургеры
+					</div>
+					<div class="category" data-id="fries__container">Гарниры</div>
+					<div class="category" data-id="sauces__container">Соусы</div>
+					<div class="category" data-id="drinks__container">Напитки</div>
+				</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger3.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Двойной говяжий
-                            </div>
-                            <div class="product__content__description">
-                                Это два аппетитных, приготовленных на огне бифштекса из 100% говядины с сочными
-                                помидорами,
-                                свежим нарезанным листовым салатом, густым майонезом, хрустящими маринованными
-                                огурчиками и
-                                свежим луком на нежной булочке с кунжутом.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>520 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>320 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div id="burgers__container" class="products-container">
+					<div class="products">
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger1.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">
+									бургер с двойной котлетой
+								</div>
+								<div class="product__content__description">
+									Свежая булочка, говяжья котлета Black Angus Aberdin, лук
+									карамелизированный,томаты свежие, бекон ображенный, салат
+									айсберг, огурец солёный, соль морская, сыр пармезан, томатный
+									соус собственного приготовления.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>560 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>680 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger4.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Бургер Цезарь
-                            </div>
-                            <div class="product__content__description">
-                                Любители курочки оценят новинку Бургер Цезарь! Сочная хрустящая куриная котлета, свежий
-                                томат и
-                                листовой салат заправляются соусом Цезарь и подаются на подрумяненной булочке с
-                                кунжутом.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>480 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>460 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger2.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Черный ахтунг-бургер</div>
+								<div class="product__content__description">
+									В этом сэндвиче приготовленное на гриле нежное белое куриное
+									филе встречается с беконом, соусом «Барбекю», листовым
+									салатом, спелым помидором, густым майонезом и хрустящим
+									поджаренным луком на подрумяненной булочке.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>320 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>450 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger5.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Ирландский Бургер
-                            </div>
-                            <div class="product__content__description">
-                                Ирландский Бургер с фирменным соусом достоин звания высокой кухни. Сочный говяжий
-                                бифштекс,
-                                расплавленный сыр Чеддер, маринованные огурчики, хрустящий лук и листья салата
-                                заправляются
-                                сырным соусом и пряным соусом из натуральных ингридиентов. Подается на нежной
-                                картофельной
-                                булочке.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>510 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>780 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger3.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Двойной говяжий</div>
+								<div class="product__content__description">
+									Это два аппетитных, приготовленных на огне бифштекса из 100%
+									говядины с сочными помидорами, свежим нарезанным листовым
+									салатом, густым майонезом, хрустящими маринованными огурчиками
+									и свежим луком на нежной булочке с кунжутом.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>520 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>320 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger6.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Злой Бургер
-                            </div>
-                            <div class="product__content__description">
-                                Встречай самый злой бургер в коллекции Бургеров. Бекон, двойная порция говядины на
-                                гриле,
-                                много
-                                сыра - все, как ты любишь, и ничего лишнего!
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>270 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>330 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger4.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Бургер Цезарь</div>
+								<div class="product__content__description">
+									Любители курочки оценят новинку Бургер Цезарь! Сочная
+									хрустящая куриная котлета, свежий томат и листовой салат
+									заправляются соусом Цезарь и подаются на подрумяненной булочке
+									с кунжутом.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>480 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>460 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/burger7.png" alt="burger">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Макси Бургер
-                            </div>
-                            <div class="product__content__description">
-                                Это целых три вкуснейших, приготовленных на огне бифштекса из 100% говядины с сочными
-                                помидорами, свежим нарезанным листовым салатом, густым майонезом, хрустящими
-                                маринованными
-                                огурчиками и свежим луком на нежной булочке с кунжутом.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>770 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>1190 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger5.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Ирландский Бургер</div>
+								<div class="product__content__description">
+									Ирландский Бургер с фирменным соусом достоин звания высокой
+									кухни. Сочный говяжий бифштекс, расплавленный сыр Чеддер,
+									маринованные огурчики, хрустящий лук и листья салата
+									заправляются сырным соусом и пряным соусом из натуральных
+									ингридиентов. Подается на нежной картофельной булочке.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>510 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>780 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger6.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Злой Бургер</div>
+								<div class="product__content__description">
+									Встречай самый злой бургер в коллекции Бургеров. Бекон,
+									двойная порция говядины на гриле, много сыра - все, как ты
+									любишь, и ничего лишнего!
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>270 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>330 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                </div>
-                <div class="products-nav">
-                    <div class="product-nav active">
-                        <img src="images/burger1.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger2.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger3.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger4.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger5.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger6.png" alt="burger">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/burger7.png" alt="burger">
-                    </div>
-                </div>
-            </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/burger7.png" alt="burger" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Макси Бургер</div>
+								<div class="product__content__description">
+									Это целых три вкуснейших, приготовленных на огне бифштекса из
+									100% говядины с сочными помидорами, свежим нарезанным листовым
+									салатом, густым майонезом, хрустящими маринованными огурчиками
+									и свежим луком на нежной булочке с кунжутом.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>770 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>1190 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products-nav">
+						<div class="product-nav active">
+							<img src="images/burger1.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger2.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger3.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger4.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger5.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger6.png" alt="burger" />
+						</div>
+						<div class="product-nav">
+							<img src="images/burger7.png" alt="burger" />
+						</div>
+					</div>
+				</div>
 
-            <div id="fries__container" class="products-container">
-                <div class="products">
+				<div id="fries__container" class="products-container">
+					<div class="products">
+						<div class="product">
+							<div class="product__image">
+								<img src="images/fries1.png" alt="fries" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">
+									Картошка ФРИ маленькая
+								</div>
+								<div class="product__content__description">
+									Горячий и свежий картофель Фри® - золотистые и хрустящие
+									ломтики отлично дополнят любой обед.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>350 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>500 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/fries1.png" alt="fries">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Картошка ФРИ маленькая
-                            </div>
-                            <div class="product__content__description">
-                                Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
-                                обед.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>350 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/fries2.png" alt="fries" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">
+									Картошка ФРИ стандартная
+								</div>
+								<div class="product__content__description">
+									Горячий и свежий картофель Фри® - золотистые и хрустящие
+									ломтики отлично дополнят любой обед.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>350 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>500 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/fries2.png" alt="fries">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Картошка ФРИ стандартная
-                            </div>
-                            <div class="product__content__description">
-                                Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
-                                обед.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>350 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/fries3.png" alt="fries" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Картошка ФРИ большая</div>
+								<div class="product__content__description">
+									Горячий и свежий картофель Фри® - золотистые и хрустящие
+									ломтики отлично дополнят любой обед.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>500 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>650 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products-nav">
+						<div class="product-nav active">
+							<img src="images/fries1.png" alt="fries" />
+						</div>
+						<div class="product-nav">
+							<img src="images/fries2.png" alt="fries" />
+						</div>
+						<div class="product-nav">
+							<img src="images/fries3.png" alt="fries" />
+						</div>
+					</div>
+				</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/fries3.png" alt="fries">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Картошка ФРИ большая
-                            </div>
-                            <div class="product__content__description">
-                                Горячий и свежий картофель Фри® - золотистые и хрустящие ломтики отлично дополнят любой
-                                обед.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>500 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>650 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div id="sauces__container" class="products-container">
+					<div class="products">
+						<div class="product">
+							<div class="product__image">
+								<img src="images/sauce1.png" alt="sauce" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Кисло-сладкий Соус</div>
+								<div class="product__content__description">
+									Прекрасный кисло-сладкий соус станет отменным дополнением к
+									сочной картошечке ФРИ.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>100 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>100 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                </div>
-                <div class="products-nav">
-                    <div class="product-nav active">
-                        <img src="images/fries1.png" alt="fries">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/fries2.png" alt="fries">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/fries3.png" alt="fries">
-                    </div>
-                </div>
-            </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/sauce2.png" alt="sauce" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Ореховый Соус</div>
+								<div class="product__content__description">
+									Прекрасный ореховый соус станет отменным дополнением к сочной
+									картошечке ФРИ.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>100 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>100 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <div id="sauces__container" class="products-container">
-                <div class="products">
+						<div class="product">
+							<div class="product__image">
+								<img src="images/sauce3.png" alt="sauce" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Кетчуп</div>
+								<div class="product__content__description">
+									Прекрасный кетчуп станет отменным дополнением к сочной
+									картошечке ФРИ.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>100 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>100 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/sauce1.png" alt="sauce">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Кисло-сладкий Соус
-                            </div>
-                            <div class="product__content__description">
-                                Прекрасный кисло-сладкий соус станет отменным дополнением к сочной картошечке ФРИ.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>100 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>100 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/sauce4.png" alt="sauce" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Соус барбекю</div>
+								<div class="product__content__description">
+									Прекрасный соус барбекю станет отменным дополнением к сочной
+									картошечке ФРИ.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>100 гр.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>100 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products-nav">
+						<div class="product-nav active">
+							<img src="images/sauce1.png" alt="sauce" />
+						</div>
+						<div class="product-nav">
+							<img src="images/sauce2.png" alt="sauce" />
+						</div>
+						<div class="product-nav">
+							<img src="images/sauce3.png" alt="sauce" />
+						</div>
+						<div class="product-nav">
+							<img src="images/sauce4.png" alt="sauce" />
+						</div>
+					</div>
+				</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/sauce2.png" alt="sauce">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Ореховый Соус
-                            </div>
-                            <div class="product__content__description">
-                                Прекрасный ореховый соус станет отменным дополнением к сочной картошечке ФРИ.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>100 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>100 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div id="drinks__container" class="products-container">
+					<div class="products">
+						<div class="product">
+							<div class="product__image">
+								<img src="images/drink1.png" alt="drink" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Pepsi</div>
+								<div class="product__content__description">
+									Настоящий вкус Pepsi® – идеальный спутник к любому блюду.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>500 мл.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>120 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/sauce3.png" alt="sauce">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Кетчуп
-                            </div>
-                            <div class="product__content__description">
-                                Прекрасный кетчуп станет отменным дополнением к сочной картошечке ФРИ.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>100 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>100 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/drink2.png" alt="drink" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">Mirinda</div>
+								<div class="product__content__description">
+									Mirinda® – это всегда оранжевое настроение!
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>500 мл.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>120 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/sauce4.png" alt="sauce">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Соус барбекю
-                            </div>
-                            <div class="product__content__description">
-                                Прекрасный соус барбекю станет отменным дополнением к сочной картошечке ФРИ.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>100 гр.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>100 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="product">
+							<div class="product__image">
+								<img src="images/drink3.png" alt="drink" />
+							</div>
+							<div class="product__content">
+								<div class="product__content__title">7UP</div>
+								<div class="product__content__description">
+									Шипучая кислинка 7UP® освежает в любое время дня.
+								</div>
+								<div class="product__content__properties">
+									<div class="product__content__property">
+										<img src="images/scale.png" alt="scale" />
+										<span>500 мл.</span>
+									</div>
+									<div class="product__content__property">
+										<img src="images/coin.png" alt="coin" />
+										<span>120 руб.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products-nav">
+						<div class="product-nav active">
+							<img src="images/drink1.png" alt="drink" />
+						</div>
+						<div class="product-nav">
+							<img src="images/drink2.png" alt="drink" />
+						</div>
+						<div class="product-nav">
+							<img src="images/drink3.png" alt="drink" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                </div>
-                <div class="products-nav">
-                    <div class="product-nav active">
-                        <img src="images/sauce1.png" alt="sauce">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/sauce2.png" alt="sauce">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/sauce3.png" alt="sauce">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/sauce4.png" alt="sauce">
-                    </div>
-                </div>
-            </div>
+		<div class="info">
+			<h2 class="block-title">отзывы наших клиентов</h2>
+			<div class="reviews">
+				<div class="review">
+					<div
+						class="review__image"
+						style="background-image: url('images/review1.jpg')"
+					></div>
+					<div class="review__text">
+						<div class="review__text__title">Очень вкусные бургеры!</div>
+						<div class="review__text__description">
+							Были в майские праздники. Очереди не было, 2-3 человека впереди
+							нас. Место за столом тоже нашли без проблем. Интересная подача,
+							перчатки очень продуманно, действительно удобно, чтобы не
+							испачкать руки. Брали чизбургер с говядиной. Очень вкусно! Котлета
+							сочная и очень мягкая, булочка тоже мягкая и вкусная. Ели бургеры
+							в ресторанах заграницей, есть с чем сравнить. Реально вкусные и
+							достойные! дешевые цены. Ну и конечно по уровню качества продукции
+							бургеры намного выше сетевого общепита! BURGERCLUB, респект!
+						</div>
+					</div>
+				</div>
 
-            <div id="drinks__container" class="products-container">
-                <div class="products">
+				<div class="review">
+					<div
+						class="review__image"
+						style="background-image: url('images/review2.jpg')"
+					></div>
+					<div class="review__text">
+						<div class="review__text__title">Пальчики оближешь</div>
+						<div class="review__text__description">
+							Люблю на прогулках открывать для себя что-то новое, перекусывать в
+							новых для себя местах! На этот раз это было известное местечко в
+							центре Москвы! Я достаточно разборчив к еде вне дома, но здесь мне
+							кухня понравилась, заказывала грибной бургер на чёрной булочке и
+							чизбургер с индейкой, оба бургера оказались вкусные. Котлета в
+							грибном бургере была из говядины и оказалась посочнее, чем
+							индейка.
+						</div>
+					</div>
+				</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/drink1.png" alt="drink">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Pepsi
-                            </div>
-                            <div class="product__content__description">
-                                Настоящий вкус Pepsi® – идеальный спутник к любому блюду.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>500 мл.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>120 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="review">
+					<div
+						class="review__image"
+						style="background-image: url('images/review3.jpg')"
+					></div>
+					<div class="review__text">
+						<div class="review__text__title">Очень нравится</div>
+						<div class="review__text__description">
+							Отличная бургерная в самом центре Москвы. Большое количество
+							различных бургеров с оригинальными начинками и наполнением. Есть
+							картошка-фри и различные напитки местного приготовления. Все очень
+							вкусно и сытно! Всем советую!
+						</div>
+					</div>
+				</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/drink2.png" alt="drink">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Mirinda
-                            </div>
-                            <div class="product__content__description">
-                                Mirinda® – это всегда оранжевое настроение!
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>500 мл.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>120 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="review">
+					<div
+						class="review__image"
+						style="background-image: url('images/review4.jpg')"
+					></div>
+					<div class="review__text">
+						<div class="review__text__title">Перекусить сойдет</div>
+						<div class="review__text__description">
+							Это место, чтобы на бегу перекусить. Еда из пластиковых тарелок,
+							напитки из пластиковых стаканчиков. В общем могу сказать, что еда
+							не плохая, но не рекомендую выбирать это место для вечерних
+							посиделок, тут иной формат.
+						</div>
+					</div>
+				</div>
+			</div>
 
-                    <div class="product">
-                        <div class="product__image">
-                            <img src="images/drink3.png" alt="drink">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                7UP
-                            </div>
-                            <div class="product__content__description">
-                                Шипучая кислинка 7UP® освежает в любое время дня.
-                            </div>
-                            <div class="product__content__properties">
-                                <div class="product__content__property">
-                                    <img src="images/scale.png" alt="scale">
-                                    <span>500 мл.</span>
-                                </div>
-                                <div class="product__content__property">
-                                    <img src="images/coin.png" alt="coin">
-                                    <span>120 руб.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+			<div id="addresses" class="addresses">
+				<h2 class="block-title">адреса наших ресторанов</h2>
+				<div class="addresses__container">
+					<div class="address__container">
+						<div class="address">
+							<div class="address__text">
+								<img src="images/location.png" alt="location" />
+								<span>Проспект Невский, 39а</span>
+							</div>
+							<div class="address__text">
+								<img src="images/phone.png" alt="phone" />
+								<span>+ 375 29 789 89 89</span>
+							</div>
+							<div class="address__text">
+								<img src="images/clock.png" alt="clock" />
+								<span>Ежедневно 9:00 — 23:00</span>
+							</div>
+							<div class="address__button">
+								<button class="btn-white open-modal">
+									забронировать столик
+								</button>
+							</div>
+						</div>
+					</div>
 
-                </div>
-                <div class="products-nav">
-                    <div class="product-nav active">
-                        <img src="images/drink1.png" alt="drink">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/drink2.png" alt="drink">
-                    </div>
-                    <div class="product-nav">
-                        <img src="images/drink3.png" alt="drink">
-                    </div>
-                </div>
-            </div>
+					<div class="address__container">
+						<div class="address">
+							<div class="address__text">
+								<img src="images/location.png" alt="location" />
+								<span>Проспект Мира, 12</span>
+							</div>
+							<div class="address__text">
+								<img src="images/phone.png" alt="phone" />
+								<span>+ 375 29 789 89 89</span>
+							</div>
+							<div class="address__text">
+								<img src="images/clock.png" alt="clock" />
+								<span>Ежедневно 9:00 — 23:00</span>
+							</div>
+							<div class="address__button">
+								<button class="btn-white open-modal">
+									забронировать столик
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        </div>
-    </div>
+			<div class="instagram">
+				<a href="#" target="_blank">
+					<div>
+						<img src="images/instagram.png" alt="instagram" />
+					</div>
+					<div class="instagram__text">
+						подпишись на наш инстаграм и получи скидку 20% на первый заказ
+					</div>
+				</a>
+			</div>
+		</div>
 
-    <div class="info">
-        <h2 class="block-title">
-            отзывы наших клиентов
-        </h2>
-        <div class="reviews">
-            <div class="review">
-                <div class="review__image" style="background-image: url('images/review1.jpg')">
-                </div>
-                <div class="review__text">
-                    <div class="review__text__title">
-                        Очень вкусные бургеры!
-                    </div>
-                    <div class="review__text__description">
-                        Были в майские праздники. Очереди не было, 2-3 человека впереди нас. Место за столом тоже нашли
-                        без проблем. Интересная
-                        подача, перчатки очень продуманно, действительно удобно, чтобы не испачкать руки. Брали
-                        чизбургер с говядиной. Очень
-                        вкусно! Котлета сочная и очень мягкая, булочка тоже мягкая и вкусная. Ели бургеры в ресторанах
-                        заграницей, есть с чем
-                        сравнить. Реально вкусные и достойные! дешевые цены. Ну и конечно по уровню качества продукции
-                        бургеры намного выше
-                        сетевого общепита! BURGERCLUB, респект!
-                    </div>
-                </div>
-            </div>
+		<div class="footer">
+			burgerclub 2019&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;все права
+			защищены
+		</div>
 
-            <div class="review">
-                <div class="review__image" style="background-image: url('images/review2.jpg')">
-                </div>
-                <div class="review__text">
-                    <div class="review__text__title">
-                        Пальчики оближешь
-                    </div>
-                    <div class="review__text__description">
-                        Люблю на прогулках открывать для себя что-то новое, перекусывать в новых для себя местах! На
-                        этот раз это было известное
-                        местечко в центре Москвы! Я достаточно разборчив к еде вне дома, но здесь мне кухня понравилась,
-                        заказывала грибной
-                        бургер на чёрной булочке и чизбургер с индейкой, оба бургера оказались вкусные. Котлета в
-                        грибном бургере была из
-                        говядины и оказалась посочнее, чем индейка.
-                    </div>
-                </div>
-            </div>
+		<div class="reservation__container">
+			<div class="reservation">
+				<div class="reservation__cancel">
+					<img
+						class="reservation__cancel__close"
+						src="images/cancel.png"
+						alt="cancel"
+					/>
+				</div>
+				<div class="reservation__content">
+					<h2 class="block-title">забронировать столик</h2>
+					<form action="mail.php" class="reserve" method="POST">
+						<div class="reserve__input">
+							<label for="name">Ваше имя</label>
+							<div>
+								<input type="text" name="name" id="name" />
+							</div>
+						</div>
+						<div class="reserve__input">
+							<label for="count">Количество человек</label>
+							<div>
+								<input type="text" name="count" id="count" />
+							</div>
+						</div>
+						<div class="reserve__input">
+							<label for="phone">Ваш телефон</label>
+							<div>
+								<input type="text" name="phone" id="phone" />
+							</div>
+						</div>
+						<div class="reserve__input">
+							<label for="time">Желаемое время</label>
+							<div>
+								<input type="text" name="time" id="time" />
+							</div>
+						</div>
+						<p class="reserve__error">Заполните правильно все поля</p>
+					</form>
+					<div class="reserve__button">
+						<button class="btn-yellow" type="submit">забронировать</button>
+					</div>
+				</div>
+				<div class="reservation__sent">
+					<h2 class="block-title">спасибо за то, что выбрали нас!</h2>
+					<div class="reservation__sent__text">
+						Администратор BURGERCLUB свяжется с вами в течение 15 минут, чтобы
+						подтвердить бронирование
+					</div>
+				</div>
+			</div>
+		</div>
 
-            <div class="review">
-                <div class="review__image" style="background-image: url('images/review3.jpg')">
-                </div>
-                <div class="review__text">
-                    <div class="review__text__title">
-                        Очень нравится
-                    </div>
-                    <div class="review__text__description">
-                        Отличная бургерная в самом центре Москвы. Большое количество различных бургеров с оригинальными
-                        начинками и наполнением.
-                        Есть картошка-фри и различные напитки местного приготовления. Все очень вкусно и сытно! Всем
-                        советую!
-                    </div>
-                </div>
-            </div>
-
-            <div class="review">
-                <div class="review__image" style="background-image: url('images/review4.jpg')">
-                </div>
-                <div class="review__text">
-                    <div class="review__text__title">
-                        Перекусить сойдет
-                    </div>
-                    <div class="review__text__description">
-                        Это место, чтобы на бегу перекусить. Еда из пластиковых тарелок, напитки из пластиковых
-                        стаканчиков. В общем могу
-                        сказать, что еда не плохая, но не рекомендую выбирать это место для вечерних посиделок, тут иной
-                        формат.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="addresses" class="addresses">
-            <h2 class="block-title">
-                адреса наших ресторанов
-            </h2>
-            <div class="addresses__container">
-                <div class="address__container">
-                    <div class="address">
-                        <div class="address__text">
-                            <img src="images/location.png" alt="location">
-                            <span>Проспект Невский, 39а</span>
-                        </div>
-                        <div class="address__text">
-                            <img src="images/phone.png" alt="phone">
-                            <span>+ 375 29 789 89 89</span>
-                        </div>
-                        <div class="address__text">
-                            <img src="images/clock.png" alt="clock">
-                            <span>Ежедневно 9:00 — 23:00</span>
-                        </div>
-                        <div class="address__button">
-                            <button class="btn-white open-modal">забронировать столик</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="address__container">
-                    <div class="address">
-                        <div class="address__text">
-                            <img src="images/location.png" alt="location">
-                            <span>Проспект Мира, 12</span>
-                        </div>
-                        <div class="address__text">
-                            <img src="images/phone.png" alt="phone">
-                            <span>+ 375 29 789 89 89</span>
-                        </div>
-                        <div class="address__text">
-                            <img src="images/clock.png" alt="clock">
-                            <span>Ежедневно 9:00 — 23:00</span>
-                        </div>
-                        <div class="address__button">
-                            <button class="btn-white open-modal">забронировать столик</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="instagram">
-            <a href="#" target="_blank">
-                <div>
-                    <img src="images/instagram.png" alt="instagram">
-                </div>
-                <div class="instagram__text">
-                    подпишись на наш инстаграм и получи скидку 20% на первый заказ
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="footer">
-        burgerclub 2019&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;все права защищены
-    </div>
-
-    <div class="reservation__container">
-        <div class="reservation">
-            <div class="reservation__cancel">
-                <img class="reservation__cancel__close" src="images/cancel.png" alt="cancel">
-            </div>
-            <div class="reservation__content">
-                <h2 class="block-title">
-                    забронировать столик
-                </h2>
-                <form action="mail.php" class="reserve" method="POST">
-                    <div class="reserve__input">
-                        <label for="name">Ваше имя</label>
-                        <div>
-                            <input type="text" name="name" id="name">
-                        </div>
-                    </div>
-                    <div class="reserve__input">
-                        <label for="count">Количество человек</label>
-                        <div>
-                            <input type="text" name="count" id="count">
-                        </div>
-                    </div>
-                    <div class="reserve__input">
-                        <label for="phone">Ваш телефон</label>
-                        <div>
-                            <input type="text" name="phone" id="phone">
-                        </div>
-                    </div>
-                    <div class="reserve__input">
-                        <label for="time">Желаемое время</label>
-                        <div>
-                            <input type="text" name="time" id="time">
-                        </div>
-                    </div>
-                    <p class="reserve__error">
-                        Заполните правильно все поля
-                    </p>
-                </form>
-                <div class="reserve__button">
-                    <button class="btn-yellow" type="submit">забронировать</button>
-                </div>
-            </div>
-            <div class="reservation__sent">
-                <h2 class="block-title">
-                    спасибо за то, что выбрали нас!
-                </h2>
-                <div class="reservation__sent__text">
-                    Администратор BURGERCLUB свяжется с вами в течение 15 минут,
-                    чтобы подтвердить бронирование
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

@@ -1,47 +1,48 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
-  font-family: "Capture_it";
-  src: url("../fonts/Captureit.ttf");
+    font-family: "Capture_it";
+    src: url("../fonts/Captureit.ttf");
 }
 
 @font-face {
-  font-family: "Lifehack Basic";
-  src: url("../fonts/LifehackBasic.otf");
+    font-family: "Lifehack Basic";
+    src: url("../fonts/LifehackBasic.otf");
 }
 
 @font-face {
-  font-family: "RobotoRegular";
-  src: url("../fonts/RobotoRegular.ttf");
+    font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular.ttf");
 }
 
 @font-face {
-  font-family: "RobotoLight";
-  src: url("../fonts/RobotoLight.ttf");
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight.ttf");
 }
 
 @font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/RobotoBold.ttf");
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold.ttf");
 }
 
 @font-face {
-  font-family: "RobotoBlack";
-  src: url("../fonts/RobotoBlack.ttf");
+    font-family: "RobotoBlack";
+    src: url("../fonts/RobotoBlack.ttf");
 }
 
 @font-face {
-  font-family: "RobotoThin";
-  src: url("../fonts/RobotoThin.ttf");
+    font-family: "RobotoThin";
+    src: url("../fonts/RobotoThin.ttf");
 }
 
 $color-bg: rgb(248, 247, 246);
 $color-white-second: rgb(254, 254, 254);
 $color-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
+$color-black-two: rgba(0, 0, 0, 0.85);
 $color-orange: #f6a501; /*rgb(246, 165, 1)*/
 $color-brown: rgb(51, 23, 3);
 $color-footer: rgb(18, 8, 1);
@@ -50,680 +51,702 @@ $color-border: rgb(63, 63, 63);
 $color-error: rgb(241, 57, 57);
 
 body {
-  background-color: $color-bg;
+    background-color: $color-bg;
 }
 
 // ==== main ====
 #main {
-  background-image: url("../images/main-bg.png");
-  height: 908px;
-  background-position: center;
+    background-image: url("../images/main-bg.png");
+    height: 908px;
+    background-position: center;
 
-  #header {
-    padding: 25px 0 15px 0;
+    #header {
+        padding: 25px 0 15px 0;
 
-    &__container {
-      width: 1170px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        &__container {
+            width: 1170px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-      #logo {
-        span {
-          font-family: "Capture_it", sans-serif;
-          font-size: 30px;
-          color: $color-white-second;
+            #logo {
+                span {
+                    font-family: "Capture_it", sans-serif;
+                    font-size: 30px;
+                    color: $color-white-second;
+                }
+            }
+
+            #menu {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 580px;
+
+                    li {
+                        font-family: "RobotoRegular", sans-serif;
+                        font-size: 16px;
+                        color: $color-white;
+                        font-weight: bold;
+
+                        a {
+                            text-decoration: none;
+                            color: $color-white;
+                        }
+
+                        &:first-child {
+                            list-style: none;
+                        }
+
+                        &.active a {
+                            font-family: "RobotoBold", sans-serif;
+                        }
+                    }
+                }
+            }
         }
-      }
-
-      #menu {
-        ul {
-          display: flex;
-          justify-content: space-between;
-          width: 580px;
-
-          li {
-            font-family: "RobotoRegular", sans-serif;
-            font-size: 16px;
-            color: $color-white;
-            font-weight: bold;
-
-            a {
-              text-decoration: none;
-              color: $color-white;
-            }
-
-            &:first-child {
-              list-style: none;
-            }
-
-            &.active a {
-              font-family: "RobotoBold", sans-serif;
-            }
-          }
-        }
-      }
     }
-  }
 
-  #titles {
-    padding-top: 60px;
+    #titles {
+        padding-top: 60px;
 
-    #titles__container {
-      width: 1170px;
-      margin: 0 auto;
+        #titles__container {
+            width: 1170px;
+            margin: 0 auto;
 
-      #title-burger {
-        width: 600px;
-        height: 130px;
-        background-image: url("../images/stamp.png");
-        background-size: 100% 100%;
-        font-family: "Capture_it", sans-serif;
-        font-size: 55px;
-        text-shadow: 0 0 91.16px rgba(2, 7, 8, 0.004);
-        color: $color-orange;
-        text-align: center;
-        line-height: 130px;
-      }
+            #title-burger {
+                width: 600px;
+                height: 130px;
+                background-image: url("../images/stamp.png");
+                background-size: 100% 100%;
+                font-family: "Capture_it", sans-serif;
+                font-size: 55px;
+                text-shadow: 0 0 91.16px rgba(2, 7, 8, 0.004);
+                color: $color-orange;
+                text-align: center;
+                line-height: 130px;
+            }
 
-      #show-menu {
-        .btn-yellow {
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 15px;
-          color: $color-black;
-          text-transform: uppercase;
-          text-align: center;
-          border-radius: 10px;
-          background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          width: 209px;
-          height: 50px;
-          margin-top: 60px;
-          transition: all 0.3s;
-          outline: none;
-          border-style: none;
-          text-decoration: none;
-          display: block;
-          line-height: 50px;
+            #show-menu {
+                .btn-yellow {
+                    font-family: "RobotoRegular", sans-serif;
+                    font-size: 15px;
+                    color: $color-black;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    width: 209px;
+                    height: 50px;
+                    margin-top: 60px;
+                    transition: all 0.3s;
+                    outline: none;
+                    border-style: none;
+                    text-decoration: none;
+                    display: block;
+                    line-height: 50px;
 
-          &:hover {
-            box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
-            cursor: pointer;
-          }
+                    &:hover {
+                        box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            #title-text {
+                font-family: "Lifehack Basic", sans-serif;
+                font-size: 40px;
+                color: $color-white;
+                text-shadow: 0 0 14.25px rgba(2, 7, 8, 0.95);
+                -moz-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+                -webkit-transform: matrix(
+                    0.99320644518279,
+                    -0.11636561883718,
+                    0.11636561883718,
+                    0.99320644518279,
+                    0,
+                    0
+                );
+                -ms-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
+                margin-top: 35px;
+
+                span {
+                    color: $color-orange;
+                }
+            }
         }
-      }
-
-      #title-text {
-        font-family: "Lifehack Basic", sans-serif;
-        font-size: 40px;
-        color: $color-white;
-        text-shadow: 0 0 14.25px rgba(2, 7, 8, 0.5);
-        -moz-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
-        -webkit-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
-        -ms-transform: matrix(0.99320644518279, -0.11636561883718, 0.11636561883718, 0.99320644518279, 0, 0);
-        margin-top: 35px;
-
-        span {
-          color: $color-orange;
-        }
-      }
     }
-  }
 }
 
 // ==== features ====
 #features {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 
-  &__container {
-    width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .feature {
-    width: 390px;
-    text-align: center;
-    margin: 25px 0;
-
-    &__image {
-      margin: 0 auto 20px auto;
-      width: 96px;
-      height: 79px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    &__container {
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-    &__title {
-      font-family: "RobotoBold", sans-serif;
-      font-size: 20px;
-      color: $color-brown;
-      margin-bottom: 20px;
-    }
+    .feature {
+        width: 390px;
+        text-align: center;
+        margin: 25px 0;
 
-    &__text {
-      font-family: "RobotoLight", sans-serif;
-      font-size: 18px;
-      color: $color-brown;
-      line-height: 1.222;
-      text-align: center;
+        &__image {
+            margin: 0 auto 20px auto;
+            width: 96px;
+            height: 79px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            font-family: "RobotoBold", sans-serif;
+            font-size: 20px;
+            color: $color-brown;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-family: "RobotoLight", sans-serif;
+            font-size: 18px;
+            color: $color-brown;
+            line-height: 1.222;
+            text-align: center;
+        }
     }
-  }
 }
 
 // ==== description ====
 #description {
-  background-image: url("../images/description-bg.png");
-  background-position: center;
-  height: 1090px;
+    background-image: url("../images/description-bg.png");
+    background-position: center;
+    height: 1090px;
 
-  .block-title {
-    padding-top: 200px;
-  }
-
-  &__container {
-    display: flex;
-    width: 1170px;
-    margin: 0 auto;
-
-    .description__text {
-      max-width: 420px;
-
-      &__title {
-        font-family: "Lifehack Basic", sans-serif;
-        font-size: 30px;
-        color: $color-white-second;
-        line-height: 1.167;
-        margin: 115px 0 45px 0;
-      }
-
-      &__words {
-        font-family: "RobotoLight", sans-serif;
-        font-size: 16px;
-        color: $color-white-second;
-        line-height: 1.563;
-        text-indent: 20px;
-        margin: 15px 0;
-      }
+    .block-title {
+        padding-top: 200px;
     }
 
-    .description__image {
-      max-width: 720px;
+    &__container {
+        display: flex;
+        width: 1170px;
+        margin: 0 auto;
+
+        .description__text {
+            max-width: 420px;
+
+            &__title {
+                font-family: "Lifehack Basic", sans-serif;
+                font-size: 30px;
+                color: $color-white-second;
+                line-height: 1.167;
+                margin: 115px 0 45px 0;
+            }
+
+            &__words {
+                font-family: "RobotoLight", sans-serif;
+                font-size: 16px;
+                color: $color-white-second;
+                line-height: 1.563;
+                text-indent: 20px;
+                margin: 15px 0;
+            }
+        }
+
+        .description__image {
+            // max-width: 720px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
     }
-  }
 }
 
 // ==== stock ====
 .stock {
-  padding-bottom: 95px;
+    padding-bottom: 95px;
 
-  .stock__container {
-    width: 1170px;
-    margin: 0 auto;
+    .stock__container {
+        width: 1170px;
+        margin: 0 auto;
 
-    .block-title {
-      color: $color-brown;
-      margin-bottom: 45px;
-    }
-
-    .category__container {
-      display: flex;
-      justify-content: center;
-      margin: 30px auto;
-
-      .category {
-        font-family: "RobotoLight", sans-serif;
-        font-size: 20px;
-        color: $color-brown;
-        text-align: center;
-        border: 1px solid transparent;
-        border-radius: 10px;
-        margin: 0 10px;
-        padding: 10px 15px;
-
-        &:hover {
-          border: 1px solid $color-brown;
-          cursor: pointer;
-        }
-      }
-
-      .category.active {
-        font-family: "RobotoBold", sans-serif;
-        border: 1px solid $color-brown;
-      }
-    }
-
-    .products {
-      width: 1170px;
-      margin: 0 auto;
-
-      .product {
-        display: flex;
-        justify-content: space-between;
-
-        .product__image {
-          height: 450px;
-          width: 580px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          img {
-            max-width: 100%;
-            max-height: 100%;
-          }
+        .block-title {
+            color: $color-brown;
+            margin-bottom: 45px;
         }
 
-        .product__content {
-          width: 500px;
-
-          .product__content__title {
-            font-family: "RobotoBold", sans-serif;
-            font-size: 25px;
-            color: $color-brown;
-            text-transform: uppercase;
-            margin: 100px 0 30px 0;
-          }
-
-          .product__content__description {
-            font-family: "RobotoLight", sans-serif;
-            font-size: 16px;
-            color: $color-brown;
-            line-height: 25px;
-            margin-bottom: 50px;
-          }
-
-          .product__content__properties {
+        .category__container {
             display: flex;
+            justify-content: center;
+            margin: 30px auto;
 
-            .product__content__property {
-              span {
+            .category {
                 font-family: "RobotoLight", sans-serif;
                 font-size: 20px;
                 color: $color-brown;
-              }
+                text-align: center;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                margin: 0 10px;
+                padding: 10px 15px;
 
-              img {
-                margin-right: 10px;
-              }
-
-              &:first-child {
-                margin-right: 80px;
-              }
+                &:hover {
+                    border: 1px solid $color-brown;
+                    cursor: pointer;
+                }
             }
-          }
-        }
-      }
-    }
 
-    .products-nav {
-      display: flex;
-      margin-top: 10px;
-
-      .product-nav {
-        width: 75px;
-        height: 75px;
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-        opacity: 0.3;
-        cursor: pointer;
-        transition: opacity 0.3s;
-
-        &.slick-current {
-          opacity: 1;
+            .category.active {
+                font-family: "RobotoBold", sans-serif;
+                border: 1px solid $color-brown;
+            }
         }
 
-        &:hover {
-          opacity: 1;
+        .products {
+            width: 1170px;
+            margin: 0 auto;
+
+            .product {
+                display: flex;
+                justify-content: space-between;
+
+                .product__image {
+                    height: 450px;
+                    width: 580px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .product__content {
+                    width: 500px;
+
+                    .product__content__title {
+                        font-family: "RobotoBold", sans-serif;
+                        font-size: 25px;
+                        color: $color-brown;
+                        text-transform: uppercase;
+                        margin: 100px 0 30px 0;
+                    }
+
+                    .product__content__description {
+                        font-family: "RobotoLight", sans-serif;
+                        font-size: 16px;
+                        color: $color-brown;
+                        line-height: 25px;
+                        margin-bottom: 50px;
+                    }
+
+                    .product__content__properties {
+                        display: flex;
+
+                        .product__content__property {
+                            span {
+                                font-family: "RobotoLight", sans-serif;
+                                font-size: 20px;
+                                color: $color-brown;
+                            }
+
+                            img {
+                                margin-right: 10px;
+                            }
+
+                            &:first-child {
+                                margin-right: 80px;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
-        &:focus {
-          outline: none;
+        .products-nav {
+            display: flex;
+            margin-top: 10px;
+
+            .product-nav {
+                width: 75px;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                opacity: 0.3;
+                cursor: pointer;
+                transition: opacity 0.3s;
+
+                &.slick-current {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
         }
 
-        img {
-          max-width: 100%;
-          max-height: 100%;
+        #fries__container {
+            display: none;
         }
-      }
+
+        #sauces__container {
+            display: none;
+        }
+
+        #drinks__container {
+            display: none;
+        }
     }
 
-    #fries__container {
-      display: none;
+    .slick-prev:before {
+        content: url("../images/prev.png");
     }
 
-    #sauces__container {
-      display: none;
+    .slick-next {
+        left: 600px;
     }
 
-    #drinks__container {
-      display: none;
+    .slick-next:before {
+        content: url("../images/next.png");
     }
-  }
-
-  .slick-prev:before {
-    content: url("../images/prev.png");
-  }
-
-  .slick-next {
-    left: 600px;
-  }
-
-  .slick-next:before {
-    content: url("../images/next.png");
-  }
 }
 
 // ==== info ====
 .info {
-  background-image: url("../images/info-bg.png");
-  background-position: top center;
-  padding: 1px 0;
-
-  .block-title {
-    margin: 130px 0 60px 0;
-  }
-
-  .reviews {
-    display: flex;
-    justify-content: space-around;
-    width: 1170px;
-    margin: 0 auto;
-
-    .review {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin: 0 50px;
-      outline: none;
-
-      .review__image {
-        border-radius: 50%;
-        width: 112px;
-        height: 112px;
-        overflow: hidden;
-        background-size: cover;
-        background-position: center;
-      }
-
-      .review__text {
-        width: 325px;
-
-        .review__text__title {
-          font-family: "RobotoBold", sans-serif;
-          font-size: 20px;
-          color: $color-white-second;
-          text-transform: uppercase;
-          margin-bottom: 35px;
-        }
-
-        .review__text__description {
-          font-family: "RobotoLight", sans-serif;
-          font-size: 16px;
-          color: $color-white-second;
-          line-height: 25px;
-        }
-      }
-    }
-
-    .slick-prev:before {
-      content: url("../images/prev-white.png");
-    }
-
-    .slick-next:before {
-      content: url("../images/next-white.png");
-    }
-  }
-
-  .addresses {
-    width: 1170px;
-    margin: 0 auto;
+    background-image: url("../images/info-bg.png");
+    background-position: top center;
+    padding: 1px 0;
 
     .block-title {
-      margin: 150px 0 60px 0;
+        margin: 130px 0 60px 0;
     }
 
-    .addresses__container {
-      display: flex;
-      justify-content: center;
+    .reviews {
+        display: flex;
+        justify-content: space-around;
+        width: 1170px;
+        margin: 0 auto;
 
-      .address__container {
-        border: 1px solid $color-white;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 0 15px;
+        .review {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 0 50px;
+            outline: none;
 
-        .address {
-          border: 1px solid $color-white;
-          border-radius: 10px;
-          width: 470px;
-
-          .address__text {
-            margin-top: 25px;
-            text-align: left;
-            padding: 0 90px;
-
-            span {
-              font-family: "RobotoBold", sans-serif;
-              font-size: 20px;
-              color: $color-bg;
-              margin-left: 15px;
-              vertical-align: middle;
+            .review__image {
+                border-radius: 50%;
+                width: 112px;
+                height: 112px;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
             }
 
-            img {
-              vertical-align: middle;
-            }
-          }
+            .review__text {
+                width: 325px;
 
-          .address__button {
-            margin: 40px auto 25px auto;
-            text-align: center;
-          }
+                .review__text__title {
+                    font-family: "RobotoBold", sans-serif;
+                    font-size: 20px;
+                    color: $color-white-second;
+                    text-transform: uppercase;
+                    margin-bottom: 35px;
+                }
+
+                .review__text__description {
+                    font-family: "RobotoLight", sans-serif;
+                    font-size: 16px;
+                    color: $color-white-second;
+                    line-height: 25px;
+                }
+            }
         }
-      }
-    }
-  }
 
-  .instagram {
-    width: 1170px;
-    margin: 85px auto;
-    text-align: center;
+        .slick-prev:before {
+            content: url("../images/prev-white.png");
+        }
 
-    a {
-      text-decoration: none;
-      cursor: pointer;
+        .slick-next:before {
+            content: url("../images/next-white.png");
+        }
     }
 
-    .instagram__text {
-      font-family: "RobotoBlack", sans-serif;
-      font-size: 20px;
-      color: $color-orange;
-      text-transform: uppercase;
-      margin-top: 30px;
+    .addresses {
+        width: 1170px;
+        margin: 0 auto;
+
+        .block-title {
+            margin: 150px 0 60px 0;
+        }
+
+        .addresses__container {
+            display: flex;
+            justify-content: center;
+
+            .address__container {
+                border: 1px solid $color-white;
+                border-radius: 10px;
+                padding: 15px;
+                margin: 0 15px;
+
+                .address {
+                    border: 1px solid $color-white;
+                    border-radius: 10px;
+                    width: 470px;
+
+                    .address__text {
+                        margin-top: 25px;
+                        text-align: left;
+                        padding: 0 90px;
+
+                        span {
+                            font-family: "RobotoBold", sans-serif;
+                            font-size: 20px;
+                            color: $color-bg;
+                            margin-left: 15px;
+                            vertical-align: middle;
+                        }
+
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .address__button {
+                        margin: 40px auto 25px auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
-  }
+
+    .instagram {
+        width: 1170px;
+        margin: 85px auto;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .instagram__text {
+            font-family: "RobotoBlack", sans-serif;
+            font-size: 20px;
+            color: $color-orange;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+    }
 }
 
 // ==== footer ====
 .footer {
-  background-color: $color-footer;
-  width: 100%;
-  font-family: "RobotoThin", sans-serif;
-  font-size: 10px;
-  color: $color-footer-text;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 25px 0;
+    background-color: $color-footer;
+    width: 100%;
+    font-family: "RobotoThin", sans-serif;
+    font-size: 10px;
+    color: $color-footer-text;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 0;
 }
 
 // ==== reservation__container ====
 .reservation__container {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
 
-  .reservation {
-    border: 1px solid $color-border;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0px 0px 40.67px 8.33px rgba(2, 7, 8, 1);
-    width: 584px;
-    box-sizing: border-box;
-    padding: 45px 35px 70px 35px;
-    position: relative;
-
-    .reservation__cancel {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
-
-    .reservation__content {
-      h2.block-title {
-        font-size: 25px;
-      }
-
-      .reserve {
-        margin: 30px 0 45px 0;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .reservation {
+        border: 1px solid $color-border;
+        border-radius: 10px;
+        background-color: transparent;
+        box-shadow: 0px 0px 40.67px 8.33px rgba(2, 7, 8, 1);
+        width: 584px;
+        box-sizing: border-box;
+        padding: 45px 35px 70px 35px;
         position: relative;
 
-        .reserve__input {
-          margin-top: 15px;
-
-          label {
-            font-family: "RobotoRegular", sans-serif;
-            font-size: 11px;
-            color: $color-white;
-            margin-left: 20px;
-            line-height: 22px;
-          }
-
-          input {
-            border: 1px solid $color-white;
-            border-radius: 10px;
-            width: 248px;
-            height: 38px;
-            background-color: transparent;
-            color: $color-white;
-            outline: none;
-            padding: 12px 20px;
-            box-sizing: border-box;
-          }
-
-          input:-webkit-autofill,
-          input:-webkit-autofill:focus {
-            transition: background-color 600000s 0s, color 600000s 0s;
-          }
-        }
-
-        .reserve__error {
-          display: none;
-          position: absolute;
-          font-family: "RobotoBold", sans-serif;
-          color: $color-error;
-          font-size: 18px;
-          text-align: center;
-          width: 100%;
-          top: 160px;
-        }
-      }
-
-      .reserve__button {
-        text-align: center;
-        .btn-yellow {
-          font-family: "RobotoRegular", sans-serif;
-          font-size: 15px;
-          color: $color-black;
-          text-transform: uppercase;
-          text-align: center;
-          border-radius: 10px;
-          background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
-          width: 209px;
-          height: 50px;
-          transition: all 0.3s;
-          outline: none;
-          border-style: none;
-
-          &:hover {
-            box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
+        .reservation__cancel {
+            position: absolute;
+            top: 10px;
+            right: 10px;
             cursor: pointer;
-          }
         }
-      }
+
+        .reservation__content {
+            h2.block-title {
+                font-size: 25px;
+            }
+
+            .reserve {
+                margin: 30px 0 45px 0;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: relative;
+
+                .reserve__input {
+                    margin-top: 15px;
+
+                    label {
+                        font-family: "RobotoRegular", sans-serif;
+                        font-size: 11px;
+                        color: $color-white;
+                        margin-left: 20px;
+                        line-height: 22px;
+                    }
+
+                    input {
+                        border: 1px solid $color-white;
+                        border-radius: 10px;
+                        width: 248px;
+                        height: 38px;
+                        background-color: transparent;
+                        color: $color-white;
+                        outline: none;
+                        padding: 12px 20px;
+                        box-sizing: border-box;
+                    }
+
+                    input:-webkit-autofill,
+                    input:-webkit-autofill:focus {
+                        transition: background-color 600000s 0s, color 600000s 0s;
+                    }
+                }
+
+                .reserve__error {
+                    display: none;
+                    position: absolute;
+                    font-family: "RobotoBold", sans-serif;
+                    color: $color-error;
+                    font-size: 18px;
+                    text-align: center;
+                    width: 100%;
+                    top: 160px;
+                }
+            }
+
+            .reserve__button {
+                text-align: center;
+                .btn-yellow {
+                    font-family: "RobotoRegular", sans-serif;
+                    font-size: 15px;
+                    color: $color-black;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border-radius: 10px;
+                    background-image: -ms-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    background-image: -webkit-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    background-image: -moz-linear-gradient(180deg, rgb(255, 199, 59) 0%, rgb(235, 161, 0) 100%);
+                    width: 209px;
+                    height: 50px;
+                    transition: all 0.3s;
+                    outline: none;
+                    border-style: none;
+
+                    &:hover {
+                        box-shadow: 0 0 13.5px 1.5px rgba(204, 142, 6, 1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .reservation__sent {
+            display: none;
+
+            h2.block-title {
+                margin-top: 95px;
+                font-size: 25px;
+            }
+
+            .reservation__sent__text {
+                font-family: "RobotoRegular", sans-serif;
+                font-size: 15px;
+                color: $color-white;
+                text-align: center;
+                margin: 35px 0 110px 0;
+            }
+        }
     }
+}
 
-    .reservation__sent {
-      display: none;
-
-      h2.block-title {
-        margin-top: 95px;
-        font-size: 25px;
-      }
-
-      .reservation__sent__text {
-        font-family: "RobotoRegular", sans-serif;
-        font-size: 15px;
-        color: $color-white;
-        text-align: center;
-        margin: 35px 0 110px 0;
-      }
-    }
-  }
+// ==== burger ====
+#burger {
+    display: none;
+    color: $color-white;
+    font-size: 32px;
+    line-height: 30px;
 }
 
 // ==== slick ====
 .slick-slide img {
-  display: inline;
+    display: inline;
 }
 
 // ==== Заголовки ====
 .block-title {
-  font-size: 35px;
-  font-family: "RobotoBold", sans-serif;
-  color: $color-orange;
-  text-transform: uppercase;
-  text-align: center;
+    font-size: 35px;
+    font-family: "RobotoBold", sans-serif;
+    color: $color-orange;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 // ==== Белая кнопка ====
 .btn-white {
-  border: 1px solid $color-white;
-  border-radius: 10px;
-  width: 207px;
-  height: 48px;
-  font-family: "RobotoRegular", sans-serif;
-  font-size: 13px;
-  color: $color-white-second;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s;
+    border: 1px solid $color-white;
+    border-radius: 10px;
+    width: 207px;
+    height: 48px;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 13px;
+    color: $color-white-second;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
 
-  &:hover {
-    border-color: $color-orange;
-    color: $color-orange;
-  }
+    &:hover {
+        border-color: $color-orange;
+        color: $color-orange;
+    }
 }
+
+@import "adaptive";
